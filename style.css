@@ -1,0 +1,159 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+#Container{
+    height: 100vh;
+    background-image: url(./Images/living_room.jpg);
+    z-index: -10;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.layer{
+    background-color: rgba(134, 134, 97, 0.629);
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Navbar Section */
+nav{
+    display: flex;
+    padding: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Navbar list */
+nav > div:nth-child(2){
+    display: flex;
+    padding: 20px 0px 25px 0px;
+    border-bottom: 3px solid black;
+}
+nav > div:nth-child(2) > ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding-right: -40px;
+}
+nav > div:nth-child(2) > ul > li{
+    margin-right: 57px;
+    font-size: 20px;
+    font-weight: bold;
+}
+nav > div:nth-child(2) > ul > li:hover{
+    text-shadow: 0px 0px 1px black;
+    cursor: pointer;
+}
+
+nav > div:nth-child(2) > div{
+    display: flex;
+    align-items: center;
+}
+nav > div:nth-child(2) > div > i{
+    font-size: 25px;
+    margin-right: 5px;
+}
+nav > div:nth-child(2) > div > i:hover{
+    text-shadow: 0 0 2px rgb(0, 0, 0);
+}
+
+
+/* Main line Section 1 */
+#section_1{
+    
+    position: relative;
+    margin: 100px;
+}
+#section_1 > h1{
+    color: rgb(0, 0, 0);
+    font-size: 60px;
+    word-spacing: 5px;
+    font-weight: bolder;
+    line-height: 70px;
+}
+#section_1 > button{
+    margin-top: 30px;
+    background: transparent;
+    padding: 15px 25px;
+    font-size: 20px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50px;
+}
+#section_1 > button:hover{
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    border: 2px solid black;
+    box-shadow: 0 0 10px black;
+}
+
+
+/* Floating box 1 */
+#floating_box_1{
+    position: absolute;
+    transform: translateX(1200px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box_container{
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.369);
+    color: #fff;
+    margin-bottom: 29.5px;
+}
+.box_container > button{
+    margin-bottom: 10px;
+    font-size:25px;
+    padding: 2px 25px;
+    border-radius: 20px;
+    border: none;
+}
+#floating_box_1 > hr{
+    rotate: 90deg;
+    width: 55px;
+    background-color: #fff;
+}
+#floating_box_1 > i {
+    color: #fff;
+    margin-top: 24px;
+}
+
+/* Floating box 2 */
+#floating_box_2{
+    position: absolute;
+    transform: translate3d(950px , 225px , 0px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box_container{
+    width: 200px;
+    padding: 25px;
+    background-color: rgba(0, 0, 0, 0.423);
+    color: #fff;
+}
+.box_container > button{
+    margin-bottom: 10px;
+    font-size:25px;
+    padding: 2px 25px;
+    border-radius: 20px;
+    border: none;
+}
+.box_container > p{
+    line-height: 20px;
+    word-spacing: 2px;
+}
+#floating_box_2 > hr{
+    width: 50px;
+    background-color: #fff;
+}
+#floating_box_2 > i {
+    color: #fff;
+}
